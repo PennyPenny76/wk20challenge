@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu Mono', 'Rubik Mono One',system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -24,6 +24,7 @@ a:hover {
 }
 
 body {
+  font-family: 'Ubuntu Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
@@ -32,6 +33,14 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h2 {
+  font-family: 'Rubik Mono One', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  font-family: 'Rubik Mono One', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 button {
@@ -53,11 +62,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.profile-footer {
-  text-align: center;
-  position: fixed;
-  inset: auto 0 0 0;
-  padding: 1em;
+.outlet-container {
+  margin: 20px; /* 调整这个值来设置你需要的margin */
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center; /* 垂直居中对齐图片和文本 */
+  gap: 40px; /* 控制图片和文本之间的间距 */
+}
+
+.my-photo {
+  width: 400px;
+  height: auto;
+  border-radius: 8px; 
+  margin-right: 20px; 
 }
 
 @media (prefers-color-scheme: light) {
@@ -71,4 +90,20 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+p {
+  flex: 1; /* 使文本容器占据剩余的可用空间 */
+  margin-left: 20px; /* 文本左侧添加 margin */
+  margin-top: 0;
+}
+
+.github-link-image {
+  width: 400px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.github-link-image:hover {
+  transform: scale(1.1);
 }
