@@ -1,7 +1,13 @@
-// This is a static page mocking an "About Us" section for our fake user data
+import DownloadButton from '../components/DownloadButton.jsx';
+
 export default function ResumePage() {
   return (
     <div className="container pt-4">
+
+      <DownloadButton 
+          fileUrl="/Resume.pdf" // 文件的路径
+          fileName="Yingtong Peng's resume.pdf"  // 下载时显示的文件名
+      />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
         tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
